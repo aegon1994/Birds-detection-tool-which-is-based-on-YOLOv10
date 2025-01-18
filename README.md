@@ -39,3 +39,4 @@ In this section, I train twice for every pretrained files.
 The conditions of training are epochs = 250, batch = 32, imgsz = 160 and max_det = 100 in first time, other conditions are default.
 
 The conditions of training are epochs = 250, batch = 32, imgsz = 160, max_det = 100, lr0 = 0.001, cos_lr = True, ,optimizer= 'AdamW' and box = 15 in second time.
+
