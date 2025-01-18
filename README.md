@@ -30,3 +30,6 @@ In this dataset, there are 18264 photos in training data, 938 photos in val data
 You have to put your train datas(including label files), val datas and test datas in a same direction.
 
 ## Process
+### Preprocessing
+Change names of photos and files -> Ensure all photos have corresponding labels
+
