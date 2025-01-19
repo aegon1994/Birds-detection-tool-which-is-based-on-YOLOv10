@@ -36,9 +36,9 @@ Change names of photos and files -> Ensure all photos have corresponding labels
 ### training condition
 In this section, I trained twice for every pretrained files.
 
-The conditions of training are epochs = 250, batch = 32, imgsz = 160 and max_det = 100 in first time, other conditions are default.
+The parameters of training are epochs = 250, batch = 32, imgsz = 160 and max_det = 100 in first time, other parameters are default.
 
-The conditions of training are epochs = 250, batch = 32, imgsz = 160, max_det = 100, lr0 = 0.001, cos_lr = True, optimizer= 'AdamW' and box = 15 in second time.
+The parameters of training are epochs = 250, batch = 32, imgsz = 160, max_det = 100, lr0 = 0.001, cos_lr = True, optimizer= 'AdamW' and box = 15 in second time.
 
 AdamW is a suitable optimizer for small size dataset and tiny stuff detecting, it is a good choice for this project.
 
@@ -47,11 +47,13 @@ Cosine decay smoothly decrease learning rate, it could reduce oscillation during
 In YOLOv10, box is the weight of the box loss component in the loss function, it affects the emphasis on accurately predicting the bounding box coordinates.
 In this project, most objects(birds) are tiny and move in high speed, it means the emphasis for location of bounding box is more important than other loss components. That is why I raise the weight of the box loss component.
 
-I combined those condition above for model training, and have the best performance of those models so far. I also tried other conditions in yolov10s, but those condition wasn't as good as this combination.
-If you tested another condition is better than mine, Please comment belove, thank you.
+I combined those parameters above for model training, and have the best performance of those models so far. I also tried other parameters in yolov10s, but those condition wasn't as good as this combination.
+If you tested another condition is better than mine, Please comment below, thank you.
 
 ## Results
 ### The results of training
 In this section, I will compare performances of every models, and then discuss some feature of those models.
 
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/dataimage.png?raw=true">
+In this table, originx is the first condition in yolov10x, opadcos_debox15x is the second condition in yolov10x. For example, origins is the first condition in yolov10s, opadcos_debox15s is the second condition in yolov10s.
+
