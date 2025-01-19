@@ -52,4 +52,6 @@ If you tested another condition is better than mine, Please comment belove, than
 
 ## Results
 ### The results of training
-In this section, I will compare results
+In this section, I will compare performances of every models, and then discuss some feature of those models.
+
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/dataimage.png?raw=true">
