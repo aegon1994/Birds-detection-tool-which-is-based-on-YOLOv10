@@ -48,4 +48,6 @@ In YOLOv10, box is the weight of the box loss component in the loss function, it
 In this project, most objects(birds) are tiny and move in high speed, it means the emphasis for location of bounding box is more important than other loss components. That is why I raise the weight of the box loss component.
 
 I combined those condition above for model training, and have the best performance of those models so far. I also tried other conditions in yolov10s, but those condition wasn't as good as this combination.
+If you tested another condition is better than mine, Please comment belove, thank you.
+
 
