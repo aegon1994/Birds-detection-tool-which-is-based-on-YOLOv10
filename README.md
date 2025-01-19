@@ -34,9 +34,18 @@ You have to put your train datas(including label files), val datas and test data
 Change names of photos and files -> Ensure all photos have corresponding labels
 
 ### training condition
-In this section, I train twice for every pretrained files.
+In this section, I trained twice for every pretrained files.
 
 The conditions of training are epochs = 250, batch = 32, imgsz = 160 and max_det = 100 in first time, other conditions are default.
 
-The conditions of training are epochs = 250, batch = 32, imgsz = 160, max_det = 100, lr0 = 0.001, cos_lr = True, ,optimizer= 'AdamW' and box = 15 in second time.
+The conditions of training are epochs = 250, batch = 32, imgsz = 160, max_det = 100, lr0 = 0.001, cos_lr = True, optimizer= 'AdamW' and box = 15 in second time.
+
+AdamW is a suitable optimizer for small size dataset and tiny stuff detecting, it is a good choice for this project.
+
+Cosine decay smoothly decrease learning rate, it could reduce oscillation during the convergence process for performance of learning stablizing.
+
+In YOLOv10, box is the weight of the box loss component in the loss function, it affects the emphasis on accurately predicting the bounding box coordinates.
+In this project, most objects(birds) are tiny and move in high speed, it means the emphasis for location of bounding box is more important than other loss components. That is why I raise the weight of the box loss component.
+
+I combined those condition above for model training, and have the best performance of those models so far. I also tried other conditions in yolov10s, but those condition wasn't as good as this combination.
 
