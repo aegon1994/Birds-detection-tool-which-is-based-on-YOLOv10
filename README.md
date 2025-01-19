@@ -50,4 +50,5 @@ In this project, most objects(birds) are tiny and move in high speed, it means t
 I combined those condition above for model training, and have the best performance of those models so far. I also tried other conditions in yolov10s, but those condition wasn't as good as this combination.
 If you tested another condition is better than mine, Please comment belove, thank you.
 
-
+## Results
+### The results of training
