@@ -93,4 +93,5 @@ The Precision-Recall curve: In these graph, Precision is on y-dimension, Recall 
 
 In first table, We the recall of all models is low and confidence is high at precision is 1. We want to know the real relationship between recall and precison in all models. In those graph above, We will see a common of all model, that is precision is high when recall is low. When recall is over a threshold, precision would fall down immediately. It means you can only choose high precision but low recall, or high recall or high precision.
 
-It also represents when models recognized more correct results of birds in all correct results, it actually recognized cautiously. When models  
+It also represents when models recognized more correct results of birds in all correct results, it actually recognized cautiously. When models recognized more correct results of birds in results of birds, the correct results of birds is little in in all correct results.
+
