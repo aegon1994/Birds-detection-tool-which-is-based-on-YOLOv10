@@ -61,6 +61,7 @@ you will see in most comparison, the comprehensive performance of second conditi
 
 Another fact is the most complex or the biggst model isn't the best model, opadcos_debox15m or opadcos_debox15b is less complex than models in yolov10l or yolov10x, but their comprehensive performance is better than models in yolov10l or yolov10x. It means If you wanted use this project, opadcos_debox15m or opadcos_debox15b would be good choices.
 
+In this part, I compare the commons and differences by confusion matrix.
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/sorigin/confusion_matrix_normalized.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/scos_debox15/confusion_matrix_normalized.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/morigin/confusion_matrix_normalized.png?raw=true">
@@ -71,3 +72,5 @@ Another fact is the most complex or the biggst model isn't the best model, opadc
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/lcos_debox15/confusion_matrix_normalized.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xorigin/confusion_matrix_normalized.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xcos_debox15/confusion_matrix_normalized.png?raw=true">
+At first, the order from above to below is confusion matrix of first condition in yolov10s -> second condition in yolov10s -> first condition in yolov10m -> second condition in yolov10m and so on, it is basically the same as the order of last table, and the rest of oreder of graph will be same.
+
