@@ -76,8 +76,12 @@ In this part, I present features by confusion matrix.
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xcos_debox15/confusion_matrix_normalized.png?raw=true">
 At first, the order from above to below is confusion matrix of first condition in yolov10s -> second condition in yolov10s -> first condition in yolov10m -> second condition in yolov10m and so on, it is basically the same as the order of last table, and the rest of oreder of graph will be same.
 
-In those graph above, We could see their common by confusion matrix, there are so many False Positive(FP) and False Negative(FN) cases. it means the performance of model is terrible. I thought the reason is most objects are tiny and move in high speed, and I should tried to amplify the size of photos.
+In those graph above, We could see their common by confusion matrix, there are so many False Positive(FP) and False Negative(FN) cases. It means most bird results are actually background, and most background results are bird. The possibiliy of model which recognize the correct result is low and recognization is low too.
 
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/sorigin/PR_curve.png?raw=true">
+<img src="">
+<img src="">
+<img src="">
 <img src="">
 <img src="">
 <img src="">
