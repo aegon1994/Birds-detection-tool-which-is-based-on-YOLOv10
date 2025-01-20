@@ -95,8 +95,14 @@ In first table, We the recall of all models is low and confidence is high at pre
 
 It also represents when models recognized more correct results of birds in all correct results, it actually recognized cautiously. When models recognized more correct results of birds in results of birds, the correct results of birds is little in in all correct results.
 
-## Discussion & conclusion
+## Discussion
 
 From the first table, we know the best model for recognition of tiny objects which move in high speed is not the most complex one, it means We have to choose the most suitable pretrained file like yolov10m or yolov10b. We also know in recognition of tiny objects which move in high speed in YOLOv10, box loss function raising and cosine decay for learn rating decreasing is a better way to train your model. The smaller pretrained files like yolov10s is too simple to train your model for birds detecting.
 
-From confusion matrixes of all models, we realize recognization of our models actually is not good enough to birds detecting. 
+From confusion matrixes of all models, we realize recognization of our models actually is not good enough to birds detecting. The color of top right and left area is deeper than others, it means our models confuse birds and background. I thought the reason is our models can't actually recognize difference between tiny birds and other tiny stuff like leaves.
+
+From graph of Precision-Recall curve, we find precision would fall down when recall is over a threshold in our models. It means We could only choose high rate of correct results of birds in high False Positive or in high True Negative. 
+
+Like we thought above, I thought our models is not good at tiny stuff detecting in high speed so far. I thought the limitations of mine is I don't have that kind of hardwave to train my model. In "Optimized SmallWaterbird Detection Method Using Surveillance Videos Based on YOLOv7", they trained their model by 8 RTX2080ti GPU. I have only one RTX3060 GPU. The diversity of my dataset is not enough to train my model even though I added other photos of birds.
+
+There are also some ways to improve the results of my models without a lot of money like amplify the size of my photos, or tried other optimizers in future work.
