@@ -59,4 +59,15 @@ In this table, originx is the first condition in yolov10x, opadcos_debox15x is t
 
 you will see in most comparison, the comprehensive performance of second condition of training is better than first except the model in yolov10s. I don't know the specific reason which causes this result, but I assume yolov10s is too simple to detect the stuff which is tiny and move in high speed.
 
-Anthoer fact is the most complex or the biggst model isn't the best model, opadcos_debox15m or opadcos_debox15b is less complex than models in yolov10l or yolov10x, but their comprehensive performance is better than models in yolov10l or yolov10x. It means If you wanted use this project, opadcos_debox15m or opadcos_debox15b would be good choices.
+Another fact is the most complex or the biggst model isn't the best model, opadcos_debox15m or opadcos_debox15b is less complex than models in yolov10l or yolov10x, but their comprehensive performance is better than models in yolov10l or yolov10x. It means If you wanted use this project, opadcos_debox15m or opadcos_debox15b would be good choices.
+
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/sorigin/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/scos_debox15/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/morigin/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/mcos_debox15/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/borigin/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/bcos_debox15/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/lorigin/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/lcos_debox15/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xorigin/confusion_matrix_normalized.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xcos_debox15/confusion_matrix_normalized.png?raw=true">
