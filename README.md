@@ -57,7 +57,7 @@ In this section, I will compare performances of every models, and then discuss s
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/dataimage.png?raw=true">
 In this table, originx is the first condition in yolov10x, opadcos_debox15x is the second condition in yolov10x. For example, origins is the first condition in yolov10s, opadcos_debox15s is the second condition in yolov10s.
 
-you will see in most comparison, the comprehensive performance of second condition of training is better than first except the model in yolov10s. I don't know the specific reason which causes this result, but I assume yolov10s is too simple to detect the stuff which is tiny and move in high speed.
+You will see in most comparison, the comprehensive performance of second condition of training is better than first except the model in yolov10s. I don't know the specific reason which causes this result, but I assume yolov10s is too simple to detect the stuff which is tiny and move in high speed.
 
 Another fact is the most complex or the biggst model isn't the best model, opadcos_debox15m or opadcos_debox15b is less complex than models in yolov10l or yolov10x, but their comprehensive performance is better than models in yolov10l or yolov10x. It means If you wanted use this project, opadcos_debox15m or opadcos_debox15b would be good choices.
 
