@@ -79,9 +79,9 @@ At first, the order from above to below is confusion matrix of first condition i
 In those graph above, We could see their common by confusion matrix, there are so many False Positive(FP) and False Negative(FN) cases. It means most bird results are actually background, and most background results are bird. The possibiliy of model which recognize the correct result is low and recognization is low too.
 
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/sorigin/PR_curve.png?raw=true">
-<img src="">
-<img src="">
-<img src="">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/scos_debox15/PR_curve.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/morigin/PR_curve.png?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/mcos_debox15/PR_curve.png?raw=true">
 <img src="">
 <img src="">
 <img src="">
