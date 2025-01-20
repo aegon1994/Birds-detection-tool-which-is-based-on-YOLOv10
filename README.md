@@ -95,3 +95,8 @@ In first table, We the recall of all models is low and confidence is high at pre
 
 It also represents when models recognized more correct results of birds in all correct results, it actually recognized cautiously. When models recognized more correct results of birds in results of birds, the correct results of birds is little in in all correct results.
 
+## Discussion & conclusion
+
+From the first table, we know the best model for recognition of tiny objects which move in high speed is not the most complex one, it means We have to choose the most suitable pretrained file like yolov10m or yolov10b. We also know in recognition of tiny objects which move in high speed in YOLOv10, box loss function raising and cosine decay for learn rating decreasing is a better way to train your model. The smaller pretrained files like yolov10s is too simple to train your model for birds detecting.
+
+From confusion matrixes of all models, we realize recognization of our models actually is not good enough to birds detecting. 
