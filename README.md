@@ -54,16 +54,17 @@ If you tested another condition is better than mine, Please comment below, thank
 ### The results of training
 In this section, I will compare performances of every models, and then discuss some feature of those models.
 
+This is the table which is presents the comprehensive performance of all models
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/dataimage.png?raw=true">
 In this table, originx is the first condition in yolov10x, opadcos_debox15x is the second condition in yolov10x. For example, origins is the first condition in yolov10s, opadcos_debox15s is the second condition in yolov10s.
 
 You will see in most comparison, the comprehensive performance of second condition of training is better than first except the model in yolov10s. I don't know the specific reason which causes this result, but I assume yolov10s is too simple to detect the stuff which is tiny and move in high speed.
 
-Another fact is the most complex or the biggst model isn't the best model, opadcos_debox15m or opadcos_debox15b is less complex than models in yolov10l or yolov10x, but their comprehensive performance is better than models in yolov10l or yolov10x. It means If you wanted use this project, opadcos_debox15m or opadcos_debox15b would be good choices.
+Another fact is the most complex or the biggest model isn't the best model, opadcos_debox15m or opadcos_debox15b is less complex than models in yolov10l or yolov10x, but their comprehensive performance is better than models in yolov10l or yolov10x. It means If you wanted use this project, opadcos_debox15m or opadcos_debox15b would be good choices.
 
 We will see a common of those model, that is the recall of all models is low and confidence is high at precision is 1(or precison of every models is high in high confidence). We should observe the relationship between recall and precison in subsequent results and discuss the reason.
 
-In this part, I present features by confusion matrix.
+These are normalized confusion matrixes of all models. In this part, I present features by confusion matrix.
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/sorigin/confusion_matrix_normalized.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/scos_debox15/confusion_matrix_normalized.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/morigin/confusion_matrix_normalized.png?raw=true">
@@ -78,6 +79,7 @@ At first, the order from above to below is confusion matrix of first condition i
 
 In those graph above, We could see their common by confusion matrix, there are so many False Positive(FP) and False Negative(FN) cases. It means most bird results are actually background, and most background results are bird. The possibiliy of model which recognize the correct result is low and recognization is low too.
 
+The Precision-Recall curve: In these graph, Precision is on y-dimension, Recall is on x-dimension, the blue line is the PR curve line.
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/sorigin/PR_curve.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/scos_debox15/PR_curve.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/morigin/PR_curve.png?raw=true">
@@ -88,4 +90,7 @@ In those graph above, We could see their common by confusion matrix, there are s
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/lcos_debox15/PR_curve.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xorigin/PR_curve.png?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/xcos_debox15/PR_curve.png?raw=true">
-In first table, We the recall of all models is low and confidence is high at precision is 1. We want to know the real relationship between recall and precison in all models
+
+In first table, We the recall of all models is low and confidence is high at precision is 1. We want to know the real relationship between recall and precison in all models. In those graph above, We will see a common of all model, that is precision is high when recall is low, when recall is over a threshold, precision would fall down immediately. It means you can only choose high precision but low recall, or high recall or high precision.
+
+It also represents  
