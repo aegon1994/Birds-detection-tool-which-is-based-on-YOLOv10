@@ -106,3 +106,8 @@ From graph of Precision-Recall curve, we find precision would fall down when rec
 Like we thought above, I thought our models is not good at tiny stuff detecting in high speed so far. I thought the limitations of mine is I don't have that kind of hardwave to train my model. In "Optimized SmallWaterbird Detection Method Using Surveillance Videos Based on YOLOv7", they trained their model by 8 RTX2080ti GPU. I have only one RTX3060 GPU. The diversity of my dataset is not enough to train my model even though I added other photos of birds.
 
 There are also some ways to improve the results of my models without a lot of money like amplify the size of my photos, or tried other optimizers in future work.
+
+## Reference 
+Lei, J.; Gao, S.; Rasool, M.A.; Fan, R.; Jia, Y.; Lei, G. Optimized Small Waterbird Detection Method Using Surveillance Videos Based on YOLOv7. Animals 2023, 13, 1929. https://doi.org/10.3390/ani13121929
+
+
