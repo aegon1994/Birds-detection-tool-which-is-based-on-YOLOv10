@@ -110,4 +110,11 @@ There are also some ways to improve the results of my models without a lot of mo
 ## Reference 
 Lei, J.; Gao, S.; Rasool, M.A.; Fan, R.; Jia, Y.; Lei, G. Optimized Small Waterbird Detection Method Using Surveillance Videos Based on YOLOv7. Animals 2023, 13, 1929. https://doi.org/10.3390/ani13121929
 
+@article{wang2024yolov10,
+  title={YOLOv10: Real-Time End-to-End Object Detection},
+  author={Wang, Ao and Chen, Hui and Liu, Lihao and Chen, Kai and Lin, Zijia and Han, Jungong and Ding, Guiguang},
+  journal={arXiv preprint arXiv:2405.14458},
+  year={2024}
+}
 
+[Photo dataset of birds](https://universe.roboflow.com/yolo-9evjx/birds-wijmc/dataset/2/download)
