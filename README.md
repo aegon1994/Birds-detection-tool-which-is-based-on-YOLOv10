@@ -95,6 +95,13 @@ In first table, We the recall of all models is low and confidence is high at pre
 
 It also represents when models recognized more correct results of birds in all correct results, it actually recognized cautiously. When models recognized more correct results of birds in results of birds, the correct results of birds is little in in all correct results.
 
+Here is some results of prediction for testing photos.
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/1.jpg?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/12.jpg?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/132.jpg?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/53.jpg?raw=true">
+<img src="hhttps://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/86.jpg?raw=true">
+
 ## Discussion
 
 From the first table, we know the best model for recognition of tiny objects which move in high speed is not the most complex one, it means We have to choose the most suitable pretrained file like yolov10m or yolov10b. We also know in recognition of tiny objects which move in high speed in YOLOv10, box loss function raising and cosine decay for learn rating decreasing is a better way to train your model. The smaller pretrained files like yolov10s is too simple to train your model for birds detecting.
