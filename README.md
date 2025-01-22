@@ -100,7 +100,7 @@ Here is some results of prediction for testing photos.
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/12.jpg?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/132.jpg?raw=true">
 <img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/53.jpg?raw=true">
-<img src="hhttps://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/86.jpg?raw=true">
+<img src="https://github.com/aegon1994/Birds-detection-tool-which-is-based-on-YOLOv10/blob/main/86.jpg?raw=true">
 
 ## Discussion
 
